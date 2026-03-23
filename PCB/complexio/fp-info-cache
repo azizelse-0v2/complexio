@@ -1,4 +1,11 @@
-27236751824471821
+27240300473219063
+AT24CM01
+AT24CM01
+-40℃~+85℃ 1,000,000 cycles 1MHz 1Mbit 2.5V~5.5V 40 Years 5ms Hardware write protection function、Noise suppression function I2C SOIC-8-208mil EEPROM ROHS
+EEPROM, I2C
+0
+8
+8
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98706,6 +98713,13 @@ cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
 0
 4
 4
+SN74LVC16T245DGGR
+SN74LVC16T245DGGR
+
+
+0
+48
+48
 STM32F401RET6_Black_pill
 STM32F401RET6_Black_pill
 STM32F401RET6 Black pill microcontroller

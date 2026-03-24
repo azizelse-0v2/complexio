@@ -1,4 +1,4 @@
-27240300473219063
+27242074849674450
 AT24CM01
 AT24CM01
 -40℃~+85℃ 1,000,000 cycles 1MHz 1Mbit 2.5V~5.5V 40 Years 5ms Hardware write protection function、Noise suppression function I2C SOIC-8-208mil EEPROM ROHS
@@ -71847,6 +71847,13 @@ MPU6050
 0
 8
 8
+MPU6050
+MPU6050SMD
+
+
+0
+24
+24
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

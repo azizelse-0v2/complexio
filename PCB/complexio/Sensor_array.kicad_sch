@@ -3135,107 +3135,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 35.56 148.59)
@@ -3798,12 +3697,6 @@
 		(uuid "3c8b27a1-3225-4fa6-9e4b-6e77dfab66f8")
 	)
 	(junction
-		(at 78.74 261.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3cac1c13-4a48-4561-88c7-5989cf3b9f69")
-	)
-	(junction
 		(at 160.02 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4274,16 +4167,6 @@
 			(type default)
 		)
 		(uuid "0dce3169-b3bd-45bd-9282-e0cd195f1690")
-	)
-	(wire
-		(pts
-			(xy 76.2 261.62) (xy 78.74 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e5c9ba7-6f2f-4f9f-b74f-72d1932e35cf")
 	)
 	(wire
 		(pts
@@ -6717,7 +6600,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 261.62) (xy 81.28 261.62)
+			(xy 76.2 261.62) (xy 81.28 261.62)
 		)
 		(stroke
 			(width 0)
@@ -8515,6 +8398,71 @@
 		(uuid "faa881fe-0c6e-43d2-a081-014f81b112a6")
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 160.02 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00ef9479-dfb6-4799-b083-ccb3253d11fe")
+		(property "Reference" "#PWR020"
+			(at 160.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 160.02 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de66f299-0b87-4aa5-9f24-22d22277095b")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 219.71 227.33 0)
 		(mirror y)
@@ -8577,72 +8525,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 245.11 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02580d90-214e-4b03-9cb0-66a9c3da75a6")
-		(property "Reference" "#PWR025"
-			(at 245.11 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 245.11 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.11 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 245.11 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d99aed4-8fc8-4966-94ea-08bf33df7ef8")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8883,6 +8765,71 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 330.2 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08f889a5-3b5f-412c-97c1-048e53e5772e")
+		(property "Reference" "#PWR050"
+			(at 330.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 330.2 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 330.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac7dabfb-5e81-493a-9b0f-339dcde94d76")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9492,72 +9439,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 38.1 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0efc4251-5c19-4a23-be23-cac73809a61d")
-		(property "Reference" "#PWR031"
-			(at 38.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 38.1 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 38.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf3d00b1-d5be-441c-bb75-ae8a4b598fd8")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 294.64 215.9 0)
 		(unit 1)
@@ -10071,16 +9952,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 67.31 93.98 0)
+		(at 237.49 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18708450-228b-4ae2-8f09-6bdc33205501")
-		(property "Reference" "#PWR033"
-			(at 67.31 97.79 0)
+		(uuid "18a7c14b-b60e-48cb-b5c9-8bde72515a84")
+		(property "Reference" "#PWR043"
+			(at 237.49 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10088,8 +9968,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 67.31 88.9 0)
+		(property "Value" "BAT_5V"
+			(at 237.49 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +9977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 93.98 0)
+			(at 237.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10106,7 +9986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 93.98 0)
+			(at 237.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10115,7 +9995,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 67.31 93.98 0)
+			(at 237.49 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10124,12 +10004,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "38dff0c6-a40b-4627-8899-974f8ac76be1")
+			(uuid "82403918-547c-4e93-b1d4-cad0ea9eea97")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR033")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -10137,16 +10017,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 43.18 198.12 0)
+		(at 208.28 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c19447d-1372-4865-a831-58d9c58a2bfc")
-		(property "Reference" "#PWR053"
-			(at 43.18 201.93 0)
+		(uuid "1db3e5a0-9798-452a-91b9-1963b17dea33")
+		(property "Reference" "#PWR022"
+			(at 208.28 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10154,8 +10033,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 43.18 193.04 0)
+		(property "Value" "BAT_5V"
+			(at 208.28 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10163,7 +10042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 198.12 0)
+			(at 208.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10172,7 +10051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 198.12 0)
+			(at 208.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10181,7 +10060,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 43.18 198.12 0)
+			(at 208.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10190,12 +10069,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff3e2ed3-821f-4295-84c2-155c31bb35d0")
+			(uuid "42034220-3e1b-4eac-8733-ae337c541856")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR053")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10203,16 +10082,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 152.4 93.98 0)
+		(at 322.58 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f535a21-e0d6-4a2f-9ba9-051c98fee6fc")
-		(property "Reference" "#PWR039"
-			(at 152.4 97.79 0)
+		(uuid "20745cbe-b6a6-47d0-ad4d-3f716adc66cf")
+		(property "Reference" "#PWR049"
+			(at 322.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10220,8 +10098,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 152.4 88.9 0)
+		(property "Value" "BAT_5V"
+			(at 322.58 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10229,7 +10107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 93.98 0)
+			(at 322.58 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10238,7 +10116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 93.98 0)
+			(at 322.58 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10247,7 +10125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 152.4 93.98 0)
+			(at 322.58 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10256,12 +10134,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "527b1b0f-b85e-4e73-9c9e-244ec17d7f5a")
+			(uuid "783fa39b-138a-44a4-80a8-7db1ad424077")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR039")
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 237.49 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "20d79a05-72df-4108-8c75-c9ab04462d7c")
+		(property "Reference" "#PWR023"
+			(at 237.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 237.49 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 237.49 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "713cf6b1-8d24-4756-927a-3b14b243994d")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -10507,6 +10450,136 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 67.31 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23df780d-0b78-448a-9eb6-7114fd9ea8f9")
+		(property "Reference" "#PWR033"
+			(at 67.31 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 67.31 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 67.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cd33a37-5be0-4c14-a60b-3b6a7a07430e")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 208.28 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24125713-4875-436c-9b81-d51e4ef31488")
+		(property "Reference" "#PWR041"
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 208.28 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 208.28 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84dde2aa-1108-4d3c-8349-bf37ac88362d")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 46.99 161.29 180)
 		(unit 1)
@@ -10707,72 +10780,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 67.31 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e1f4966-d977-4c2d-b913-4ab308468077")
-		(property "Reference" "#PWR013"
-			(at 67.31 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 67.31 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 67.31 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fddb84ca-5cb6-4753-a80c-c8b95fa2843e")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -11897,72 +11904,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 152.4 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3dd3022a-319c-48b5-b263-f0c77237f45a")
-		(property "Reference" "#PWR018"
-			(at 152.4 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 152.4 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 152.4 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34a92dd4-24d1-4d1d-9cfd-70bbfc0a654f")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 71.12 259.08 0)
 		(unit 1)
@@ -11970,7 +11911,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3fede26c-bb70-4f2a-bbff-ab2232b5b4cb")
 		(property "Reference" "#PWR076"
 			(at 71.12 262.89 0)
@@ -11982,7 +11922,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 71.12 254 0)
+			(at 70.104 255.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12126,6 +12066,136 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41ac5d3b-5aed-407d-bd93-1f57b6ce3713")
+		(property "Reference" "#PWR012"
+			(at 38.1 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 38.1 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d772f6f4-623b-4e8b-b5d4-5195c9fa0982")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 245.11 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4427723e-6ac0-4f39-9d75-9fc357d016ee")
+		(property "Reference" "#PWR025"
+			(at 245.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 245.11 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 245.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee9657eb-2313-440c-a765-b6808e63aa5c")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -12689,73 +12759,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 212.09 209.55 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c66c4a4-36b6-498b-ac5f-0d5d8855d4d4")
-		(property "Reference" "#PWR070"
-			(at 212.09 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 212.09 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 212.09 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 212.09 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48d3b465-4610-4f84-b1d5-17d2cb978483")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 284.48 187.96 0)
 		(unit 1)
@@ -12861,6 +12864,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 160.02 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d0cdc79-b357-4390-adfd-d67968163929")
+		(property "Reference" "#PWR040"
+			(at 160.02 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 160.02 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 160.02 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ba865ea-8b80-41ae-8d5d-110b8e365651")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 125.73 204.47 0)
 		(unit 1)
@@ -12960,6 +13028,71 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 43.18 198.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f92bfb7-8023-4745-96cb-7c622ce2f451")
+		(property "Reference" "#PWR053"
+			(at 43.18 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 43.18 194.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 43.18 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3ff49ff-404e-43be-85d9-70fcb8658dae")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -13418,74 +13551,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 78.74 261.62 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5961c92d-cad5-4e12-97d2-00e01d554046")
-		(property "Reference" "#FLG01"
-			(at 78.74 259.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 78.74 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 78.74 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e392e3f-f586-4225-aee7-119616b00f0f")
-		)
-		(instances
-			(project ""
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 67.31 100.33 0)
 		(unit 1)
@@ -13695,6 +13760,71 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 212.09 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5dcd58d4-daae-4c0d-9984-e0374d3b6892")
+		(property "Reference" "#PWR066"
+			(at 212.09 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 212.09 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 212.09 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64156296-1844-4e4c-905b-7bfa6a8098fa")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -14053,16 +14183,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 330.2 93.98 0)
+		(at 74.93 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69ad64b3-204e-4a38-8873-456eb02473d6")
-		(property "Reference" "#PWR050"
-			(at 330.2 97.79 0)
+		(uuid "6899da2a-4808-401f-a8d8-71d5d02a0fc3")
+		(property "Reference" "#PWR015"
+			(at 74.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14070,8 +14199,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 330.2 88.9 0)
+		(property "Value" "BAT_5V"
+			(at 74.93 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14079,7 +14208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 330.2 93.98 0)
+			(at 74.93 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14088,7 +14217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 93.98 0)
+			(at 74.93 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14097,7 +14226,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 330.2 93.98 0)
+			(at 74.93 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14106,12 +14235,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce73457e-b35b-4a87-b139-2b61583860f4")
+			(uuid "accc5d76-88a3-4618-bcfc-1ab6e03c24fe")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR050")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -14179,6 +14308,136 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 123.19 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d238b59-0929-45c6-8299-7129b07f4fd2")
+		(property "Reference" "#PWR036"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 123.19 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 123.19 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58ed35df-b878-48e3-a321-3dc0183148d1")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 322.58 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f3fcdea-dc66-4663-8cb8-8c24275b071f")
+		(property "Reference" "#PWR028"
+			(at 322.58 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 322.58 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 322.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad3d9a45-8648-4c2c-ba98-20fff7cb55b8")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14290,204 +14549,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 245.11 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "729b51e8-1749-42a1-9aaf-eacf25b9929b")
-		(property "Reference" "#PWR045"
-			(at 245.11 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 245.11 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.11 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 245.11 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9ee290bd-f513-4214-944f-6aae1eb53bac")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 322.58 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "755bbeff-cdfa-42da-897d-1a8b9c723372")
-		(property "Reference" "#PWR028"
-			(at 322.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 322.58 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 322.58 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 322.58 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24293d2f-3d97-4171-8977-f141267b3ad5")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 123.19 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "763d055c-df7a-43e1-9842-bbf86627d1d1")
-		(property "Reference" "#PWR036"
-			(at 123.19 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 123.19 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 123.19 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fb1e8e9-ef53-4990-8008-c1d967dad7d1")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 219.71 176.53 0)
 		(mirror y)
@@ -14550,6 +14611,71 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 46.99 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8038bcd3-f03d-4c4f-8577-96bf22928e85")
+		(property "Reference" "#PWR051"
+			(at 46.99 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 46.99 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 46.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "218ed875-5029-4aa6-9f07-b531c862a025")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -14655,6 +14781,71 @@
 			(project ""
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 152.4 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83e71d25-7947-406f-a000-c2b93de878e0")
+		(property "Reference" "#PWR039"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 152.4 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 152.4 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1932d28e-3194-403b-95db-9518cfd46860")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -14799,73 +14990,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 212.09 181.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a74feda-9ec1-4539-88ee-f2ce310f9258")
-		(property "Reference" "#PWR066"
-			(at 212.09 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 212.09 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 212.09 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 212.09 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c94703b-c7c2-4cb2-b45e-1b917484eaf0")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -15185,6 +15309,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 245.11 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9145a96e-3317-4250-9dfc-d5414f9f9c48")
+		(property "Reference" "#PWR045"
+			(at 245.11 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 245.11 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 245.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa896e43-3ba5-47ac-a80c-779f18a1ce1b")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 74.93 100.33 180)
 		(unit 1)
@@ -15494,72 +15683,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 322.58 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96ad43dd-8b23-4590-b4b5-51cc26c1d091")
-		(property "Reference" "#PWR049"
-			(at 322.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 322.58 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 322.58 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 322.58 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77137f0e-a4ab-4d6e-a064-edf88cf8e7e5")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 330.2 100.33 180)
 		(unit 1)
@@ -15657,6 +15780,71 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 74.93 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9fd8f5ac-ee6d-4619-b10e-80a46a1be7b7")
+		(property "Reference" "#PWR035"
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 74.93 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e5b150f-0d87-494b-b810-764ceef161c8")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15762,72 +15950,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 160.02 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a283aa01-dc47-4d37-b372-796abcd73db0")
-		(property "Reference" "#PWR020"
-			(at 160.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 160.02 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 160.02 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6288bcfa-a54e-43f4-81c2-fbb914ad2ae6")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -15962,72 +16084,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 293.37 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a866ceaf-e0a0-4915-b49a-5f391a3c03d4")
-		(property "Reference" "#PWR027"
-			(at 293.37 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 293.37 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 293.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 293.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26633c0a-b546-46a1-9dac-bbeb631aa890")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -16421,72 +16477,6 @@
 			(project ""
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 38.1 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b226045c-4022-4d72-adac-aeca0cdffd8e")
-		(property "Reference" "#PWR012"
-			(at 38.1 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 38.1 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 38.1 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6cec4442-80a2-4f87-86e9-9ff18be89f8d")
-		)
-		(instances
-			(project ""
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -17224,72 +17214,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 293.37 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcad5ef6-61ac-4b51-8dde-7e3e709d1997")
-		(property "Reference" "#PWR047"
-			(at 293.37 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 293.37 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 293.37 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 293.37 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8bc2c62-24e1-49a1-8442-bd0e9df6f1f7")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 86.36 264.16 0)
 		(unit 1)
@@ -17351,72 +17275,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "#PWR077")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 330.2 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c33f812c-58ad-4523-967c-1dea4c414a8c")
-		(property "Reference" "#PWR029"
-			(at 330.2 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 330.2 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 330.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 330.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 330.2 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83e5249e-25b2-4344-ab85-405a22474afc")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -17760,16 +17618,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 123.19 38.1 0)
+		(at 293.37 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce36ac3f-a2e7-4327-baa9-e08a80a4b0df")
-		(property "Reference" "#PWR017"
-			(at 123.19 41.91 0)
+		(uuid "cde3bc8b-aa81-47d5-9eb2-e90c91bf3cc3")
+		(property "Reference" "#PWR027"
+			(at 293.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17777,8 +17634,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 123.19 33.02 0)
+		(property "Value" "BAT_5V"
+			(at 293.37 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17786,7 +17643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 38.1 0)
+			(at 293.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17795,7 +17652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 38.1 0)
+			(at 293.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17804,7 +17661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 123.19 38.1 0)
+			(at 293.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17813,78 +17670,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "806e1cf1-6247-4e3d-b8c7-9feb24ad3c72")
+			(uuid "9b8ea4fd-cabd-46ac-bba4-234ed20f7608")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 237.49 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce8cf4be-45a7-4fa3-8923-bb687a746b6a")
-		(property "Reference" "#PWR043"
-			(at 237.49 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 237.49 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 237.49 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef69673b-489d-4ea7-bc14-8f87268f714b")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR043")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -18447,72 +18238,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 74.93 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d95050a6-ac9a-49cb-a1a1-6c997daa4dc8")
-		(property "Reference" "#PWR035"
-			(at 74.93 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 74.93 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 74.93 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2a5b524-7886-4905-8724-7c11957d1479")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 133.35 204.47 0)
 		(unit 1)
@@ -18721,6 +18446,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dabf0544-4531-4fbc-8b72-1488f17706fd")
+		(property "Reference" "#PWR031"
+			(at 38.1 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 38.1 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdfcf0e9-f6d7-47b4-a6a8-1b9f7251f1d6")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 219.71 193.04 0)
 		(mirror y)
@@ -18895,17 +18685,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 76.2 259.08 0)
-		(mirror y)
+		(at 152.4 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de2f8719-784a-4184-bba4-dda2a79e9d66")
-		(property "Reference" "#PWR075"
-			(at 76.2 262.89 0)
+		(uuid "dd7a2327-d50f-48d4-bacf-ec91ff046cb4")
+		(property "Reference" "#PWR018"
+			(at 152.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18913,8 +18701,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 76.2 254 0)
+		(property "Value" "BAT_5V"
+			(at 152.4 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18922,7 +18710,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 259.08 0)
+			(at 152.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18931,7 +18719,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 259.08 0)
+			(at 152.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18940,7 +18728,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 76.2 259.08 0)
+			(at 152.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18949,78 +18737,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d25e392-3a65-4ace-9b77-77e264b62537")
+			(uuid "3f086edd-1679-4b92-a0f3-df03505a4be3")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 208.28 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfa1a2ba-02cb-4ae3-9764-61006cd8278e")
-		(property "Reference" "#PWR022"
-			(at 208.28 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 208.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 208.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac09b2f3-ff3d-467f-ad18-45afba90212b")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR022")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -19131,16 +18853,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 208.28 93.98 0)
+		(at 67.31 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4b7a269-c35b-4969-8b49-345d56f1fdb6")
-		(property "Reference" "#PWR041"
-			(at 208.28 97.79 0)
+		(uuid "e1e63a00-2174-4529-84b2-9955615ffccc")
+		(property "Reference" "#PWR013"
+			(at 67.31 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19148,8 +18869,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 208.28 88.9 0)
+		(property "Value" "BAT_5V"
+			(at 67.31 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19157,7 +18878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 93.98 0)
+			(at 67.31 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19166,7 +18887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 93.98 0)
+			(at 67.31 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19175,7 +18896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 208.28 93.98 0)
+			(at 67.31 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19184,12 +18905,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "43cc8d96-4bfd-4fd9-b820-c29be632b852")
+			(uuid "095f514d-c9ed-470b-bbae-8382313162f0")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR041")
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 293.37 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3d738a5-d051-404f-927b-21239830c887")
+		(property "Reference" "#PWR047"
+			(at 293.37 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 293.37 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 293.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f927a161-9c2b-4c4a-bb6f-d6736f3e3d68")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -19362,6 +19148,136 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 330.2 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6c77f4d-ab12-40bc-9b71-df3cd075ef8f")
+		(property "Reference" "#PWR029"
+			(at 330.2 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 330.2 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 330.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "492abe49-05ff-48d9-b5a5-00b3a64e25ec")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 76.2 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e82734b8-08bd-4e4a-93c5-0a2c1e1c88cb")
+		(property "Reference" "#PWR075"
+			(at 76.2 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 76.2 255.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 76.2 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "822ba215-fb27-426c-9f0c-b674026074e2")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -19718,138 +19634,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 237.49 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecfe6709-1b65-4b5d-8776-e5bf9817bdcb")
-		(property "Reference" "#PWR023"
-			(at 237.49 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 237.49 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 237.49 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 237.49 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9117ed7d-6c48-40e8-9224-13f101c5f354")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 160.02 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eda8ed75-3595-45ed-ae12-c9ea396358b3")
-		(property "Reference" "#PWR040"
-			(at 160.02 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 160.02 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 160.02 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31aad388-b9dc-4f89-94b9-6d0fa990160e")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KTIR0711S:KTIR0711S")
 		(at 231.14 127 180)
 		(unit 1)
@@ -20132,16 +19916,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 74.93 38.1 0)
+		(at 212.09 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9a5acd2-1552-4255-a131-e4be1f6cd2fb")
-		(property "Reference" "#PWR015"
-			(at 74.93 41.91 0)
+		(uuid "f81690e2-8f2c-4c8e-a757-ccac794308c1")
+		(property "Reference" "#PWR070"
+			(at 212.09 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20149,8 +19932,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 74.93 33.02 0)
+		(property "Value" "BAT_5V"
+			(at 212.09 178.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20158,7 +19941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 38.1 0)
+			(at 212.09 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20167,7 +19950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 38.1 0)
+			(at 212.09 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20176,7 +19959,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 74.93 38.1 0)
+			(at 212.09 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20185,12 +19968,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1fd8c90e-33b6-488d-a51e-c1647d923a52")
+			(uuid "5f1af870-658b-4489-bafd-1643dd18df4b")
 		)
 		(instances
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR015")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -20307,6 +20090,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 123.19 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd3a2bb5-8e59-467b-983b-fa2330dbe17d")
+		(property "Reference" "#PWR017"
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BAT_5V"
+			(at 123.19 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 123.19 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20d95f9b-233d-4c3a-9d56-c7fed84005d7")
+		)
+		(instances
+			(project "complexio"
+				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 109.22 204.47 0)
 		(unit 1)
@@ -20406,72 +20254,6 @@
 			(project "complexio"
 				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
 					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 46.99 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fecd7992-cb30-437d-9bb6-e83b933367dd")
-		(property "Reference" "#PWR051"
-			(at 46.99 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 46.99 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a45a9fb9-1fcd-460b-ae6a-df93e54772a9")
-		)
-		(instances
-			(project "complexio"
-				(path "/7a33da4e-08af-44bc-b337-bcaea538c303/b2507753-f021-43c2-be83-41b7b89dcecc"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)

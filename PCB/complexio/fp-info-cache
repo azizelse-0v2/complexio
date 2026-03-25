@@ -1,4 +1,4 @@
-27242074849674450
+27247399194205845
 AT24CM01
 AT24CM01
 -40℃~+85℃ 1,000,000 cycles 1MHz 1Mbit 2.5V~5.5V 40 Years 5ms Hardware write protection function、Noise suppression function I2C SOIC-8-208mil EEPROM ROHS
@@ -63286,6 +63286,20 @@ GDT 3R-6
 0
 3
 3
+HC-05
+HC-05_MODULE
+
+
+0
+34
+34
+HC-05
+HC-05_SMD
+Bluetooth Module HC-05
+Bluetooth
+0
+34
+34
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -98727,6 +98741,13 @@ SN74LVC16T245DGGR
 0
 48
 48
+SSD1306_SPI
+SSD1306_SPI
+SSD1306 based SPI OLED screen 128x64 pixels, vcc=+5V or +3.3V
+OLED, Screen, SPI
+0
+7
+7
 STM32F401RET6_Black_pill
 STM32F401RET6_Black_pill
 STM32F401RET6 Black pill microcontroller

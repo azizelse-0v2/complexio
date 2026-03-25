@@ -416,7 +416,7 @@
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
-      "label_dangling": "error",
+      "label_dangling": "warning",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
       "lib_symbol_mismatch": "warning",
@@ -428,9 +428,9 @@
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
+      "pin_not_connected": "warning",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -675,6 +675,10 @@
     [
       "a85f914a-0139-4623-9389-9d8d4f565e46",
       "IMU"
+    ],
+    [
+      "279914ed-6094-4e9f-bfe3-9c6da9d69623",
+      "LM2596"
     ]
   ],
   "text_variables": {}
